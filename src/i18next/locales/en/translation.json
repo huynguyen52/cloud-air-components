@@ -1,0 +1,716 @@
+{
+  "common": {
+    "lms": "LEARNING MANAGEMENT SYSTEM",
+    "footerText": "COPYRIGHT © 2023 LEARNING MANAGEMENT SYSTEM, All rights Reserved",
+    "untitled": "Untitled",
+    "notFoundPage": "The page you’re looking for doesn’t exist.",
+    "backHome": "Back to home",
+    "unauthorized": "You don't have permission to access this resource",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "notChosen": "-- Not chosen --",
+    "reset": "Reset",
+    "apply": "Apply",
+    "noOptions": "No options",
+    "typeToSearch": "Type to search {{label}}",
+    "account": "Account",
+    "search": "Search",
+    "searchFor": "Search for {{name}}",
+    "selected": "Selected",
+    "available": "Available",
+    "edit": "Edit",
+    "save": "Save",
+    "delete": "Delete",
+    "createdBy": "Created by",
+    "go": "Go",
+    "pageOf": "Page {{current}} of {{total}}",
+    "loading": "Loading",
+    "add": "Add"
+  },
+  "alert": {
+    "title": {
+      "default": "App alert title",
+      "permission": "Permission",
+      "role": "Role",
+      "user": "User",
+      "workflow": "Workflow",
+      "course": "Course",
+      "courseType": "Course Type",
+      "work": "Work",
+      "GET": {
+        "loading": "Loading {{title}}...",
+        "error": "Load {{title}} failed",
+        "success": "Load {{title}} successfully"
+      },
+      "POST": {
+        "loading": "Creating new {{title}}...",
+        "error": "Create {{title}} failed",
+        "success": "Create {{title}} successfully"
+      },
+      "PUT": {
+        "loading": "Updating {{title}}...",
+        "error": "Update {{title}} failed",
+        "success": "Update {{title}} successfully"
+      },
+      "DELETE": {
+        "loading": "Deleting {{title}}...",
+        "error": "Delete {{title}} failed",
+        "success": "Delete {{title}} successfully"
+      },
+      "signin": {
+        "error": "Signin failed"
+      },
+      "cloneWorkflow": {
+        "loading": "Copying {{title}}...",
+        "error": "Clone {{title}} failed",
+        "success": "Clone {{title}} successfully"
+      },
+      "uploadFile": {
+        "error": "Upload file failed"
+      }
+    }
+  },
+  "notification": {
+    "notificationCenter": "Notification Center",
+    "showUnreadOnly": "Show unread only",
+    "yesterday": "Yesterday",
+    "today": "Today",
+    "view": "View",
+    "empty": "Nothing to show"
+  },
+  "auth": {
+    "emailRequired": "Email is required",
+    "usernameRequired": "Username is required",
+    "firstNameRequired": "First name is required",
+    "lastNameRequired": "Last name is required",
+    "usernameInvalid": "Username must contain only characters and numbers without spaces",
+    "password": {
+      "invalid": "Password must contain 8 or more characters with at least one of each: uppercase, lowercase, number and special",
+      "invalidLowercase": "Password must contain at least 1 lower case letter",
+      "invalidUppercase": "Password must contain at least 1 upper case letter",
+      "invalidMinNumbers": "Password must contain at least 1 number",
+      "invalidMinSymbols": "Password must contain at least 1 special character",
+      "required": "Password is required",
+      "confirmMustMatch": "Passwords must match"
+    },
+    "welcome": "Welcome back! Please log in to your account",
+    "signIn": "Log in",
+    "contactUs": "Contact Us",
+    "keepSignIn": "Keep me signed in",
+    "leftTitle": "Learning management system",
+    "slogan": "Slogan",
+    "forgotPassword": "Forgot password?",
+    "copyright": "Copyright 2022, LEARNING MANAGEMENT SYSTEM All Rights Reserved.",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "username": "Username",
+      "password": "Password",
+      "passwordConfirmation": "Password confirmation"
+    }
+  },
+  "sideBar": {
+    "homepage": "Homepage",
+    "courses": "Courses Management",
+    "admins": "Admins Management",
+    "courseDetail": "Courses Detail",
+    "list": "List",
+    "about": "About",
+    "parentItem": "Parent Item",
+    "subItem1": "Sub Item 1",
+    "subItem2": "Sub Item 2",
+    "management": "Management",
+    "permissions": "Permission Management",
+    "courseTypes": "Course Type Management",
+    "roles": "Role Management",
+    "users": "User Management",
+    "workflowManagement": "Workflow Management",
+    "trainerManagement": "Trainer Management",
+    "workflows": "Workflows Management"
+  },
+  "permission": {
+    "id": "ID",
+    "code": "Code",
+    "name": "Name",
+    "actions": "Actions",
+    "placeholder": {
+      "name": "Please enter display name",
+      "code": "Please enter code"
+    },
+    "validate": {
+      "nameRequired": "Display name is required",
+      "codeRequired": "Code is required"
+    },
+    "confirmCommit": {
+      "title": "Edit permission confirmation",
+      "message": "Are you sure you want to save this changes for permission.",
+      "confirm": "Save",
+      "cancel": "Cancel"
+    },
+    "confirmDelete": {
+      "title": "Delete permission confirmation",
+      "message": "Are you sure you want to delete this permission. This confirm popup is just use for testing purposes, nothing changes after you press confirm",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    }
+  },
+  "role": {
+    "id": "ID",
+    "code": "Code",
+    "name": "Name",
+    "type": "Type",
+    "permissions": "Permissions",
+    "status": "Status",
+    "permissionsEmpty": "This role has not been granted any permissions yet",
+    "action": "Action",
+    "editRole": "Edit role",
+    "addRole": "Add new role",
+    "basicInfo": "Basic information",
+    "save": "Save",
+    "add": "Add",
+    "update": "update",
+    "createNew": "create new",
+    "createNewRole": "Create new role",
+    "editGuide": "Input the fields below and press \"{{buttonTitle}}\" to {{action}} role",
+    "validate": {
+      "code": {
+        "required": "Code is required",
+        "invalid": "Code must include only upper case characters and underscores"
+      },
+      "name": {
+        "required": "Name is required"
+      },
+      "type": {
+        "required": "Type is required"
+      }
+    },
+    "confirmDeletes": {
+      "title": "Delete roles confirmation",
+      "message": "Are you sure you want to delete all of the following roles: {{roles}}.",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    },
+    "confirmDelete": {
+      "title": "Delete role confirmation",
+      "message": "Are you sure you want to delete the role {{role}}.",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    }
+  },
+  "user": {
+    "username": "Username",
+    "email": "Email",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "fullName": "Full name",
+    "status": "Status",
+    "roles": "Roles",
+    "password": "Password",
+    "passwordConfirmation":"Password confirmation",
+    "isChangePassword": "Update password",
+    "permissions": "Permissions",
+    "rolesEmpty": "This user has not been granted any roles yet",
+    "action": "Action",
+    "active": "Active",
+    "archived": "Archived",
+    "isActive": "Show active users",
+    "editUser": "Edit user",
+    "addUser": "Add new user",
+    "basicInfo": "Basic information",
+    "save": "Save",
+    "add": "Add",
+    "update": "update",
+    "createNew": "create new",
+    "createNewUser": "Create new user",
+    "editGuide": "Input the fields below and press \"{{buttonTitle}}\" to {{action}} user",
+    "validate": {
+      "username": {
+        "required": "Username is required",
+        "invalid": "User must include only lower case characters and numbers without spaces"
+      },
+      "email": {
+        "required": "Email is required"
+      },
+      "firstName": {
+        "required": "First name is required"
+      },
+      "lastName": {
+        "required": "Last name is required"
+      },
+      "password": {
+        "invalid": "Password must contain 8 or more characters with at least one of each: uppercase, lowercase, number and special",
+        "invalidLowercase": "Password must contain at least 1 lower case letter",
+        "invalidUppercase": "Password must contain at least 1 upper case letter",
+        "invalidMinNumbers": "Password must contain at least 1 number",
+        "invalidMinSymbols": "Password must contain at least 1 special character",
+        "required": "Password is required",
+        "confirmMustMatch": "Passwords must match"
+      }
+    },
+    "archiveUser": {
+      "title": "Archive user confirmation",
+      "message": "Are you sure you want to archive user <strong>{{username}}</strong>.",
+      "confirm": "Archive",
+      "cancel": "Cancel"
+    },
+    "restoreUser": {
+      "title": "Restore user confirmation",
+      "message": "Are you sure you want to restore user <strong>{{username}}</strong>.",
+      "confirm": "Restore",
+      "cancel": "Cancel"
+    }
+  },
+  "inlineEditor": {
+    "addRow": "Add row",
+    "editRow": "Edit row",
+    "deleteRow": "Delete row",
+    "saveChanges": "Save changes",
+    "cancelChanges": "Cancel changes",
+    "placeholder": "Enter {{columnName}}",
+    "selectPlaceholder": "Select {{columnName}}"
+  },
+  "workflow": {
+    "id": "ID",
+    "name": "Name",
+    "module": "Module",
+    "status": "Status",
+    "version": "Version",
+    "createdDate": "Created Date",
+    "isArchived": "Show archived workflows",
+    "createWorkflow": "Create workflow",
+    "editWorkflow": "Edit workflow",
+    "addWorkflow": "Create new workflow",
+    "outputType": "{{workName}} output:",
+    "editGuide": "Edit workflow change nodes and links, press 'Save' to update the current version, press 'Publish' to save and publish the current version",
+    "editPublishedGuide": "Edit workflow change nodes and links, press 'Save' to save as a new draft version",
+    "createGuide": "Create workflow with new nodes and links, press 'Create' to save the first draft version of new workflow",
+    "save": "Save",
+    "create": "Create",
+    "publish": "Publish",
+    "worksTasks": "Works & Tasks",
+    "works": "Works",
+    "links": "Links",
+    "source": "Source",
+    "target": "Target",
+    "condition": "Condition",
+    "validate": {
+      "sourceRequired": "Source work is required",
+      "targetRequired": "Target work is required",
+      "nameRequired": "Workflow name is required",
+      "moduleRequired": "Module is required",
+      "rootRequired": "First work is required",
+      "endRequired": "Finish work is required",
+      "worksRequired": "At least one work is required"
+    },
+    "tasks": "Tasks",
+    "transitional": "Transitional",
+    "startWork": "Starting work",
+    "finalWork": "Final work",
+    "confirmCreate": {
+      "title": "Create workflow confirmation",
+      "message": "Are you sure you want to create this new workflow ?",
+      "confirm": "Create",
+      "cancel": "Cancel"
+    },
+    "confirmUpdate": {
+      "title": "Update workflow confirmation",
+      "message": "Are you sure you want to update current version of this workflow ?",
+      "confirm": "Save",
+      "cancel": "Cancel"
+    },
+    "confirmUpdatePublished": {
+      "title": "Update published workflow confirmation",
+      "message": "Are you sure you want to create a new version of this published workflow ?",
+      "confirm": "Save",
+      "cancel": "Cancel"
+    },
+    "confirmPublish": {
+      "title": "Publish workflow confirmation",
+      "message": "Are you sure you want to update and publish current version of this workflow ?",
+      "confirm": "Publish",
+      "cancel": "Cancel"
+    },
+    "archiveWorkflow": {
+      "title": "Archive workflow confirmation",
+      "message": "Are you sure you want to archive workflow <strong>{{name}}</strong>.",
+      "confirm": "Archive",
+      "cancel": "Cancel"
+    },
+    "restoreWorkflow": {
+      "title": "Restore workflow confirmation",
+      "message": "Are you sure you want to restore workflow <strong>{{name}}</strong>.",
+      "confirm": "Restore",
+      "cancel": "Cancel"
+    },
+    "cloneWorkflow": {
+      "title": "Clone workflow confirmation",
+      "message": "Are you sure you want to clone workflow <strong>{{name}}</strong>.",
+      "confirm": "Clone",
+      "cancel": "Cancel"
+    }  
+  },
+  "upload": {
+    "confirmSaveMofResult": {
+      "title": "Save Mof Result confirmation",
+      "message": "Are you sure you want to save all valid mof results ?",
+      "confirm": "Save",
+      "cancel": "Cancel"
+    },
+    "confirmCancelMofResult": {
+      "title": "Cancel Mof Result confirmation",
+      "message": "Are you sure you want to cancel uploaded data ?",
+      "confirm": "Confirm",
+      "cancel": "Cancel"
+    }
+  },
+  "course": {
+    "id": "ID",
+    "code": "Course Code",
+    "mofCode": "MOF Exam Code",
+    "mofType": "MOF Exam Type",
+    "mofCategory": "MOF Exam Category",
+    "mofStartTime": "MOF Exam Time",
+    "name": "Course Name",
+    "startEndDate": "Start-End date",
+    "section": "Section",
+    "region": "Region",
+    "channel": "Channel",
+    "venue": "Venue",
+    "primaryTrainers": "Primary trainers",
+    "coTrainers": "Co-trainers",
+    "trainers": "Trainer",
+    "assignTo": "Assign To",
+    "type": "Type",
+    "statusName": "Status",
+    "update": "Update",
+    "create": "Create",
+    "createNew": "create new",
+    "titleCourseOverview": "Course Overview",
+    "titleAolExam": "AOL Exam Information",
+    "titleMofExam": "MOF Exam Information",
+    "primaryTrainer": "Primary trainer",
+    "createNewCourse": "Create New Course",
+    "courseDetail": "Course Details",
+    "primaryCourse": "Primary Course",
+    "aolExams": "AOL Exam Code",
+    "aolExamStart": "AOL Start Date",
+    "aolExamEnd": "AOL End Date",
+    "mofExamCode": "MOF Exam Code",
+    "mofAddress": "MOF Address",
+    "mofExamTypeCategory": "MOF Exam Type/Category",
+    "mofExamTime": "MOF Exam Time",
+    "mofLocation": "MOF Address",
+    "proctorNamePhone": "Proctor Name-Phone",
+    "addMofExam": "Add MOF Exam",
+    "editMofExam": "Edit MOF Exam",
+    "importMofResult": "Import MOF Result",
+    "proctorName": "Proctor Name",
+    "proctorPhone": "Proctor Phone",
+    "editGuide": "Input the fields below and press \"{{buttonTitle}}\" to {{action}} course",
+    "createGuide": "Create course with new nodes, press 'Create' to save the first draft version of new course",
+    "approve": "Approve",
+    "reject": "Reject",
+    "startCourse": "Start Course",
+    "finishCourse": "Finish Course",
+    "confirmPassedParticipants": "Confirm passed participants",
+    "program": "Program",
+    "coTrainer": "Co-Trainer",
+    "partners": "Partner",
+    "branches": "Branch",
+    "location": "Location",
+    "description": "Description",
+    "startDate": "Start Date",
+    "listTitle": "Program Curriculum",
+    "searchPlaceholder": "Type course code, course name,.... to search.",
+    "endDate": "End Date",
+    "titleGeneral": "GENERAL INFORMATION",
+    "licenseType": "License Type",
+    "courseCode": "Course Code",
+    "participant": "Participant",
+    "planning": "Planning",
+    "attachFile" : "Attach file",
+    "history": "History",
+    "newCourse": "New Course",
+    "register": "Register",
+    "dropFile": "Drop files here or click to upload",
+    "maxSizeMofResult": "XLS, XLXS (max 100mb)",
+    "dropFileHere": "Drop the files here ...",
+    "preview": "New MOF exam result:",
+    "mofValidate": {
+      "code": {
+        "required": "MOF Exam code is required"
+      },
+      "type": {
+        "required": "MOF Exam type is required"
+      },
+      "category": {
+        "required": "MOF Exam category is required"
+      },
+      "startTime": {
+        "required": "MOF Exam time is required",
+        "min": "Mof Exam Time must be greater than or equal to {{dateStart}} and less than or equal to {{dateEnd}}"
+      },
+      "proctorPhone": {
+        "required": "Proctor phone is required"
+      },
+      "address": {
+        "required": "MOF address is required"
+      }
+    },
+    "validate": {
+      "name": {
+        "required": "Name is required"
+      },
+      "primaryCourse": {
+        "required": "Primary course is required"
+      },
+      "program": {
+        "required": "Program is required"
+      },
+      "partner": {
+        "required": "Partner is required"
+      },
+      "branch": {
+        "required": "Branch is required"
+      },
+      "trainer": {
+        "required": "Trainer is required"
+      },
+      "channel": {
+        "required": "Channel is required"
+      },
+      "startDate": {
+        "required": "Start Date is required",
+        "min": "The selected date must be greater than or equal to {{date}}"
+      },
+      "endDate": {
+        "required": "End Date is required"
+      },
+      "region": {
+        "required": "Region is required"
+      },
+      "location": {
+        "required": "Location is required"
+      },
+      "description": {
+        "required": "Description is required"
+      },
+      "aolExams": {
+        "required": "Aol Exam Code is required"
+      },
+      "aolExamStart": {
+        "required": "Aol Start Date Time is required",
+        "min": "AOL start time must be greater than or equal to {{ date}}"
+      },
+      "aolExamEnd": {
+        "required": "Aol End Date Time is required",
+        "min": "AOL end time must be greater than or equal to {{date}}"
+      }
+    },
+    "confirmCreate": {
+      "title": "Create course confirmation",
+      "message": "Are you sure you want to create new course ?",
+      "confirm": "Create",
+      "cancel": "Cancel"
+    },
+    "confirmUpdate": {
+      "title": "Update course confirmation",
+      "message": "Are you sure you want to update this course ?",
+      "confirm": "Update",
+      "cancel": "Cancel"
+    },
+    "confirmRegister": {
+      "title": "Register course confirmation",
+      "message": "Are you sure you want to register this course ?",
+      "confirm": "Register",
+      "cancel": "Cancel"
+    },
+    "confirmCancel": {
+      "title": "Cancel course confirmation",
+      "message": "Are you sure you want to cancel this course ?",
+      "confirm": "Yes",
+      "cancel": "No"
+    },
+    "confirmDelete": {
+      "title": "Delete course confirmation",
+      "message": "Are you sure you want to delete this course ?",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    },
+    "confirmApprove": {
+      "title": "Approve course confirmation",
+      "message": "Are you sure you want to approve this course ?",
+      "confirm": "Approve",
+      "cancel": "Cancel"
+    },
+    "confirmReject": {
+      "title": "Reject course confirmation",
+      "message": "Are you sure you want to reject this course ?",
+      "confirm": "Reject",
+      "cancel": "Cancel"
+    },
+    "confirmApproveEdit": {
+      "title": "Approve edit course confirmation",
+      "message": "Are you sure you want to approve edit this course ?",
+      "confirm": "Approve",
+      "cancel": "Cancel"
+    },
+    "confirmRejectEdit": {
+      "title": "Reject edit course confirmation",
+      "message": "Are you sure you want to reject edit this course ?",
+      "confirm": "Reject",
+      "cancel": "Cancel"
+    },
+    "confirmStart": {
+      "title": "Start course confirmation",
+      "message": "Are you sure you want to start this course ?",
+      "confirm": "Start",
+      "cancel": "Cancel"
+    },
+    "confirmPassed": {
+      "title": "Confirm passed course confirmation",
+      "message": "Are you sure you want to confirm passed participants for this course ?",
+      "confirm": "Yes",
+      "cancel": "Cancel"
+    },
+    "confirmFinish": {
+      "title": "Finish course confirmation",
+      "message": "Are you sure you want to finish this course ?",
+      "confirm": "Finish",
+      "cancel": "Cancel"
+    },
+    "confirmApproveCancel": {
+      "title": "Approve cancel course confirmation",
+      "message": "Are you sure you want to approve cancel this course ?",
+      "confirm": "Approve",
+      "cancel": "Cancel"
+    },
+    "confirmRejectCancel": {
+      "title": "Reject cancel course confirmation",
+      "message": "Are you sure you want to reject cancel this course ?",
+      "confirm": "Reject",
+      "cancel": "Cancel"
+    }
+  },
+  "courseType": {
+    "id": "ID",
+    "name": "Name",
+    "workflow": "Workflow",
+    "action": "Action",
+    "editCourseType": "Edit Course Type",
+    "addCourseType": "Add new Course Type",
+    "save": "Save",
+    "add": "Add",
+    "update": "update",
+    "createCourseType": "Create Course Type",
+    "createNew": "create new",
+    "createNewCourseType": "Create new CourseType",
+    "editGuide": "Input the fields below and press \"{{buttonTitle}}\" to {{action}} course type",
+    "validate": {
+      "name": {
+        "required": "Name is required"
+      },
+      "workflow": {
+        "required": "Workflow is required"
+      }
+    },
+    "confirmCreate": {
+      "title": "Create course type confirmation",
+      "message": "Are you sure you want to create new course type ?",
+      "confirm": "Create",
+      "cancel": "Cancel"
+    },
+    "confirmUpdate": {
+      "title": "Update course type confirmation",
+      "message": "Are you sure you want to update this course type ?",
+      "confirm": "Update",
+      "cancel": "Cancel"
+    }
+  },
+  "work": {
+    "config": "Configuration",
+    "editWork": "Edit Work: {{name}}",
+    "save": "Save",
+    "validate": {
+      "config": {
+        "required": "JSON string input is invalid"
+      }
+    }
+  },
+  "task": {
+    "config": "Configuration",
+    "roles":"Roles",
+    "editTask": "Edit Task: {{name}}",
+    "save": "Save",
+    "validate": {
+      "config": {
+        "required": "JSON string input is invalid"
+      }
+    }
+  },
+  "trainer": {
+    "id": "ID",
+    "searchPlaceholder": "Type fullname, phone, email, ... to search.",
+    "fullname": "Full Name",
+    "gender": "Gender",
+    "roles": "Roles",
+    "type": "Type",
+    "location": "Location",
+    "phone": "Phone",
+    "email": "Email",
+    "status": "Status",
+    "createdby": "Created By",
+    "updatedby": "Updated By",
+    "region": "Region",
+    "channel": "Channel",
+    "active": "Active",
+    "archived": "Archived"
+  },
+  "participant": {
+    "idNumber": "ID Number",
+    "fullName": "Name",
+    "gender": "Gender",
+    "phone": "Phone",
+    "email": "Email",
+    "maritalStatus": "Marital Status",
+    "education": "Education",
+    "issueDate": "Issue Date",
+    "issuePlace": "Issue Place",
+    "birthPlace": "Birth Place",
+    "dateOfBirth": "Birth Date",
+    "religion": "Religion",
+    "nationality": "Nationality",
+    "agentCode": "Agent Code",
+    "title": "Title",
+    "terminateDate": "Terminate Date",
+    "adName": "Ad Name",
+    "aolResults": "AOL Result",
+    "mofResult": "MOF Result",
+    "attendanceCheck": "Attendance Check",
+    "finalResult": "Final Result",
+    "examType": "Exam Type",
+    "alName": "Al Name",
+    "alCode": "Al Code",
+    "modifiedDate": "Modified Date",
+    "modifiedUser": "Modified By",
+    "note": "Note",
+    "id": "Id",
+    "no": "STT",
+    "score": "Score"
+  },
+  "admin": {
+    "fullName": "Full name",
+    "gender": "Gender",
+    "phone": "Phone",
+    "email": "Email",
+    "roles": "Role",
+    "status": "Status",
+    "location":"Location",
+    "channel":"Channel",
+    "region":"Region",
+    "createdBy":"Created by",
+    "updatedBy":"Updated by",
+    "searchPlaceholder": "Type user agent code, name, id.... to search."
+  }
+}

@@ -1,0 +1,55 @@
+export const API_VERSION = 1;
+export const BASE_API_URL = `/api/v${API_VERSION}`;
+
+export const REFRESH_TOKEN_API_URL = 'auth/refreshToken';
+export const SIGNIN_API_URL = '/auth/signin';
+export const SIGNOUT_API_URL = '/auth/signout';
+export const GET_CURRENT_USER_API_URL = '/user/me';
+export const SEARCH_USER_API_URL = '/user/search';
+export const USER_API_URL = '/user';
+export const USER_STATUS_API_URL = '/user/status';
+export const SEARCH_PERMISSION_API_URL = '/permission/search';
+export const PERMISSION_API_URL = '/permission';
+export const SEARCH_ROLE_API_URL = '/role/search';
+export const ROLE_API_URL = '/role';
+export const MASTER_DATA_API = '/data/master';
+export const SEARCH_NOTIFICATION_API_URL = '/notification/search';
+export const COUNT_UNREAD_NOTIFICATION_API_URL = '/notification/unread/count';
+export const READ_NOTIFICATION_API_URL = '/notification/read/{notificationId}';
+export const SEARCH_WORKFLOW_API_URL = '/workflow/search';
+export const SEARCH_MODULE_API_URL = '/module/search';
+export const SEARCH_WORK_API_URL = '/work/search';
+export const WORKFLOW_API_URL = '/workflow';
+export const WORKFLOW_ID_API_URL = '/workflow/{workflowId}';
+export const RESTORE_WORKFLOW_API_URL = '/workflow/{workflowId}/restore';
+export const ARCHIVE_WORKFLOW_API_URL = '/workflow/{workflowId}/archive';
+export const CLONE_WORKFLOW_API_URL = '/workflow/{workflowId}/clone';
+export const COURSE_API_URL = '/course';
+export const SEARCH_COURSE_API_URL = '/course/search';
+export const COURSE_ID_API_URL = '/course/{courseId}';
+export const REGISTER_COURSE_API_URL = '/course/{courseId}/register';
+export const ROLLBACK_COURSE_API_URL = '/course/{courseId}/rollback';
+export const COURSE_TRAINER_API_URL = '/course/{courseId}/trainer';
+export const SEARCH_TYPE_COURSE_API_URL = '/course/type/search';
+export const GET_WORKFLOW_PROGRESS_STATUS_API_URL = '/workflow/version/{versionId}/status/{dataId}';
+export const GET_WORKFLOW_PROGRESS_TIMELINE_API_URL = '/workflow/version/{versionId}/timeline/{dataId}';
+export const PROCESS_WORKFLOW_PROGRESS_API_URL = '/workflow/version/{versionId}/process/{dataId}';
+export const COURSE_TYPE_API_URL = '/course/type';
+export const COURSE_TYPE_ID_API_URL = '/course/type/{courseTypeId}';
+export const NODE_API_URL = '/node';
+export const PROGRAM_API_URL = '/program';
+export const AOL_EXAM_API_URL = '/aol/exam';
+export const LOCATION_API_URL = '/location';
+export const UPLOAD_MOF_RESULT_API_URL = '/course/{courseId}/participant/mof/result/upload';
+export const GET_STATUS_UPLOAD_MOF_RESULT_API_URL = '/course/{courseId}/participant/mof/result/upload/status';
+export const GET_PREVIEW_UPLOAD_MOF_RESULT_API_URL = '/course/{courseId}/participant/mof/result/upload/preview';
+export const SAVE_UPLOAD_MOF_RESULT_API_URL = '/course/{courseId}/participant/mof/result/upload/save';
+export const CANCEL_UPLOAD_MOF_RESULT_API_URL = '/course/{courseId}/participant/mof/result/upload/cancel';
+export const SEARCH_TRAINER_API_URL = '/trainer/search';
+
+export const BASE_STREAM_URL = '/stream';
+
+export const PUBLIC_NOTIFICATION_STREAM_URL = '/notification/public';
+export const PRIVATE_NOTIFICATION_STREAM_URL = '/user/notification/private';
+
+export const SEARCH_COURSE_PARITICIPANT_API_URL = '/course/{courseId}/participant/search';

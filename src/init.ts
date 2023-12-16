@@ -1,0 +1,22 @@
+import '@fontsource/urbanist';
+import '@fontsource/urbanist/100.css';
+import '@fontsource/urbanist/100-italic.css';
+import '@fontsource/urbanist/200.css';
+import '@fontsource/urbanist/200-italic.css';
+import '@fontsource/urbanist/300.css';
+import '@fontsource/urbanist/300-italic.css';
+import '@fontsource/urbanist/400.css';
+import '@fontsource/urbanist/400-italic.css';
+import '@fontsource/urbanist/500.css';
+import '@fontsource/urbanist/500-italic.css';
+import '@fontsource/urbanist/600.css';
+import '@fontsource/urbanist/600-italic.css';
+import '@fontsource/urbanist/700.css';
+import '@fontsource/urbanist/700-italic.css';
+import '@fontsource/urbanist/800.css';
+import '@fontsource/urbanist/800-italic.css';
+import '@fontsource/urbanist/900.css';
+import '@fontsource/urbanist/900-italic.css';
+import './main.css';
+
+window.global ||= window;
