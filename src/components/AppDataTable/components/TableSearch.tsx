@@ -1,7 +1,7 @@
 import { useAppDispatch } from 'src/store/hooks';
 import { setFilters } from '../reducer';
 import { SearchRequest } from 'src/types/Request';
-import AppSearchField from 'src/components/AppSearchField';
+import { AppSearchField } from 'src/components/AppSearchField';
 
 export interface TableSearchProps {
   tableId: string;

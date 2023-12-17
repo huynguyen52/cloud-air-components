@@ -1,5 +1,5 @@
 import { InputAdornment, SxProps, Theme } from '@mui/material';
-import AppTextField from './AppTextField';
+import { AppTextField } from './AppTextField';
 import { ReactComponent as SearchIcon } from 'src/assets/icons/icon-search-outline.svg';
 
 const ENTER_KEY = 'Enter';
@@ -13,7 +13,7 @@ export interface AppSearchFieldProps {
   sx?: SxProps<Theme>;
 }
 
-const AppSearchField = (props: AppSearchFieldProps) => {
+export const AppSearchField = (props: AppSearchFieldProps) => {
   const { onSubmit, sx = {}, id, size = 'small', label, placeholder } = props;
 
   const handleSubmitOnEnter = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -38,5 +38,3 @@ const AppSearchField = (props: AppSearchFieldProps) => {
     sx={sx}
   />);
 };
-
-export default AppSearchField;

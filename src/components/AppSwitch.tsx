@@ -9,7 +9,7 @@ export interface AppSwitchProps extends Omit<SwitchProps, 'defaultValue' | 'onCh
   setFieldValue: (field: string, value: unknown) => void;
 }
 
-const AppSwitch = (props: AppSwitchProps) => {
+export const AppSwitch = (props: AppSwitchProps) => {
   const { label, defaultValue, setFieldValue, sx, name } = props;
   return (<FormControlLabel
     control={<Switch
@@ -21,5 +21,3 @@ const AppSwitch = (props: AppSwitchProps) => {
     sx={sx}
   />);
 };
-
-export default AppSwitch;

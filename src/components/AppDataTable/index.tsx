@@ -8,7 +8,7 @@ import { Box, Paper, Grid, Typography } from '@mui/material';
 import { Column, IntegratedPaging, ChangeSet, IntegratedSorting, PagingState, IntegratedSelection } from '@devexpress/dx-react-grid';
 import { Grid as TableGrid, TableHeaderRow, TableFixedColumns, Table, TableRowDetail, TableSelection, } from '@devexpress/dx-react-grid-material-ui';
 import { DEFAULT_FOOTER_HEIGHT, DEFAULT_HEADER_HEIGHT, DEFAULT_PAGE_SIZE, DEFAULT_TABLE_POLLING_INTERVAL } from 'src/constants/common';
-import AppCircularProgress from '../AppCircularProgress';
+import { AppCircularProgress } from '../AppCircularProgress';
 import TableSorting from './components/TableSorting';
 import TablePaging from './components/TablePaging';
 import TableInlineEdit, { CommandAction, alignEditColumnRight } from './components/TableInlineEdit';

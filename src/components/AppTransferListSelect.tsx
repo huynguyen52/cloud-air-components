@@ -6,7 +6,7 @@ import { SearchRequest } from 'src/types/Request';
 import useOptionsSearch from 'src/utils/hooks/useOptionsSearch';
 import { get } from 'lodash';
 import { useTranslation } from 'react-i18next';
-import AppList from './AppList';
+import { AppList } from './AppList';
 import { FormControl, FormHelperText } from '@mui/material';
 
 export interface AppTransferListProps<T> {
@@ -36,7 +36,7 @@ export interface AppTransferListProps<T> {
   error?: boolean;
 }
 
-const AppTransferList = <T,>(props: AppTransferListProps<T>) => {
+export const AppTransferList = <T,>(props: AppTransferListProps<T>) => {
   const {
     defaultValue, options, lazyOptions, optionsDependencies, height = 250,
     id, name, optionId, optionLabel, helperText, setFieldValue, defaultFilter = {},
@@ -118,5 +118,3 @@ const AppTransferList = <T,>(props: AppTransferListProps<T>) => {
     </FormControl>
   );
 };
-
-export default AppTransferList;

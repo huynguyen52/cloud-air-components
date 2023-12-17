@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import App from './App';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18next';
-import AppConfirm from './components/AppConfirm';
+import { AppConfirm } from './components/AppConfirm';
 import GlobalAlert from './components/AppAlert/components/GlobalAlert';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

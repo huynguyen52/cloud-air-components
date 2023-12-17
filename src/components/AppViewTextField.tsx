@@ -22,7 +22,7 @@ const sizeVariants = {
   }
 };
 
-const AppViewTextField: React.FC<AppViewTextFieldProps> = ({ size = 'normal', value, label }) => {
+export const AppViewTextField: React.FC<AppViewTextFieldProps> = ({ size = 'normal', value, label }) => {
 
   const theme = useTheme();
   const sizeVariant = sizeVariants[size];
@@ -51,5 +51,3 @@ const AppViewTextField: React.FC<AppViewTextFieldProps> = ({ size = 'normal', va
 
   );
 };
-
-export default AppViewTextField;

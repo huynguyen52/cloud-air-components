@@ -1,6 +1,6 @@
 import { InlineEditorProps } from '.';
 import { useTranslation } from 'react-i18next';
-import AppSelect from 'src/components/AppSelect';
+import { AppSelect } from 'src/components/AppSelect';
 
 const SelectInlineEditor = ({ value, onValueChange, errors, column }: InlineEditorProps) => {
   const { t } = useTranslation();

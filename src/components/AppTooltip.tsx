@@ -18,7 +18,7 @@ const sizeVariants = {
   },
 };
 
-const AppTooltip = styled(({ className, ...props }: AppTooltipProps) => (
+export const AppTooltip = styled(({ className, ...props }: AppTooltipProps) => (
   <Tooltip {...props} arrow classes={{ popper: className }} />
 ))(({ theme, size = 'normal' }) => ({
   [`& .${tooltipClasses.arrow}`]: {
@@ -31,5 +31,3 @@ const AppTooltip = styled(({ className, ...props }: AppTooltipProps) => (
     ...theme.typography[sizeVariants[size].typography as Variant]
   },
 }));
-
-export default AppTooltip;

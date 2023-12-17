@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
-import AppCircularProgress from './AppCircularProgress';
+import { AppCircularProgress } from './AppCircularProgress';
 
-const AppLoading = () => <Box
+export const AppLoading = () => <Box
   width="100%"
   height="100%"
   position="absolute"
@@ -15,5 +15,3 @@ const AppLoading = () => <Box
 >
   <AppCircularProgress />
 </Box>;
-
-export default AppLoading;

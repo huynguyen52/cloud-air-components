@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
-import AppCircularProgress from './AppCircularProgress';
+import { AppCircularProgress } from './AppCircularProgress';
 
-const AppGlobalLoading = () => <Grid
+export const AppGlobalLoading = () => <Grid
   container
   spacing={0}
   direction="column"
@@ -11,5 +11,3 @@ const AppGlobalLoading = () => <Grid
 >
   <AppCircularProgress />
 </Grid>;
-
-export default AppGlobalLoading;

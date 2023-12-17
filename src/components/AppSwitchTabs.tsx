@@ -8,7 +8,7 @@ export interface AppSwitchTabsProps {
   onChange: (event: SyntheticEvent, newValue: number) => void;
 }
 
-const AppSwitchTabs = styled((props: AppSwitchTabsProps) => (
+export const AppSwitchTabs = styled((props: AppSwitchTabsProps) => (
   <Tabs
     {...props}
     TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
@@ -74,5 +74,3 @@ export const AppSwipeableViews = (props: AppSwipeableViewsProps) => {
     </SwipeableViews>
   );
 };
-
-export default AppSwitchTabs;

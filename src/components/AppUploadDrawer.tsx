@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useMemo } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { Drawer, Box, Typography, Grid, LinearProgress, IconButton, useTheme } from '@mui/material';
-import AppButton from './AppButton';
+import { AppButton } from './AppButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { t } from 'i18next';
 import UploadIcon from '../assets/icons/icon-upload.svg';
@@ -28,7 +28,7 @@ interface AppUploadDrawerProps {
   extraProps?: ExtraProps;
 }
 
-const AppUploadDrawer: React.FC<AppUploadDrawerProps> = (props: AppUploadDrawerProps) => {
+export const AppUploadDrawer: React.FC<AppUploadDrawerProps> = (props: AppUploadDrawerProps) => {
   const theme = useTheme();
   const { open, onClose, useUploadMutation, renderPreview, extraProps = {},
     useGetStatusQuery, confirmSaveMessage, confirmCancelMessage,
@@ -262,4 +262,3 @@ const AppUploadDrawer: React.FC<AppUploadDrawerProps> = (props: AppUploadDrawerP
   );
 };
 
-export default AppUploadDrawer;

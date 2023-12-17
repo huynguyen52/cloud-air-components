@@ -1,6 +1,6 @@
 import { Box, Collapse, List, ListItem, ListItemButton, ListItemText, Paper, useTheme } from '@mui/material';
 import { get, sortBy, toLower } from 'lodash';
-import AppSearchField from './AppSearchField';
+import { AppSearchField } from './AppSearchField';
 import { useTranslation } from 'react-i18next';
 import { ReactNode, useState } from 'react';
 import ExpandLess from '@mui/icons-material/ExpandLess';
@@ -25,7 +25,7 @@ export interface AppListProps<T> {
   sortByField?: string;
 }
 
-const AppList = <T,>(props: AppListProps<T>) => {
+export const AppList = <T,>(props: AppListProps<T>) => {
   const {
     searchable, optionId, optionLabel, onItemClick,
     id, items, height = '100%', label, onSearchChange,
@@ -101,5 +101,3 @@ const AppList = <T,>(props: AppListProps<T>) => {
     </Paper>
   </Box>);
 };
-
-export default AppList;

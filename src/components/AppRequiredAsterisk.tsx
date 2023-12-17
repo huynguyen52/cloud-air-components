@@ -1,6 +1,6 @@
 import { Typography, useTheme } from '@mui/material';
 
-const AppRequiredAsterisk = (props: {required?: boolean}) => {
+export const AppRequiredAsterisk = (props: {required?: boolean}) => {
   const { required } = props;
   const theme = useTheme();
   return required && (
@@ -15,5 +15,3 @@ const AppRequiredAsterisk = (props: {required?: boolean}) => {
     </span>
   );
 };
-
-export default AppRequiredAsterisk;

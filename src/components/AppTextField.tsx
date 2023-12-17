@@ -1,12 +1,12 @@
 import { FormControl, InputLabel, TextField, TextFieldProps, IconButton, InputAdornment, useTheme, Theme, SxProps } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
-import AppCircularProgress from './AppCircularProgress';
+import { AppCircularProgress } from './AppCircularProgress';
 import React, { useEffect, useState } from 'react';
 import { Variant } from '@mui/material/styles/createTypography';
-import AppViewTextField from './AppViewTextField';
+import { AppViewTextField } from './AppViewTextField';
 import { debounce, omit } from 'lodash';
 import { DEFAULT_INPUT_DEBOUNCE } from 'src/constants/common';
-import AppRequiredAsterisk from './AppRequiredAsterisk';
+import { AppRequiredAsterisk } from './AppRequiredAsterisk';
 
 export interface AppTextFieldProps extends Omit<TextFieldProps, 'size'> {
   loading?: boolean;
@@ -69,7 +69,7 @@ const useStyles = (theme: Theme, size: 'small' | 'normal', sx: SxProps<Theme>) =
   }
 });
 
-const AppTextField = (props: AppTextFieldProps) => {
+export const AppTextField = (props: AppTextFieldProps) => {
   const {
     id, loading, label, type = 'text', required = false, size = 'normal', sx = {}, showViewMode,
     error, setFieldValue, defaultValue, value, name, onChange
@@ -151,5 +151,3 @@ const AppTextField = (props: AppTextFieldProps) => {
     </FormControl>
   );
 };
-
-export default AppTextField;

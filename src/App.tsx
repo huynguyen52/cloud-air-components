@@ -4,7 +4,7 @@ import router from './router';
 import defaultTheme from './themes/default';
 import { useCookies } from 'react-cookie';
 import { useGetCurrentUserQuery } from './api/userApi';
-import AppFullScreenLoader from './components/AppGlobalLoading';
+import { AppGlobalLoading } from './components/AppGlobalLoading';
 
 const App = () => {
   const [ cookies ] = useCookies([ 'signed_in' ]);
@@ -15,7 +15,7 @@ const App = () => {
 
   return <ThemeProvider theme={defaultTheme}>
     <CssBaseline enableColorScheme />
-    {isLoading ? <AppFullScreenLoader /> : <RouterProvider router={router} />}
+    {isLoading ? <AppGlobalLoading /> : <RouterProvider router={router} />}
   </ThemeProvider>;
 };
 

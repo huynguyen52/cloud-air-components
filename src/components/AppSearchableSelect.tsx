@@ -1,5 +1,5 @@
 import { Autocomplete, AutocompleteProps, Input, useTheme } from '@mui/material';
-import AppTextField from './AppTextField';
+import { AppTextField } from './AppTextField';
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import OptionsHook, { LazyOptionsHook, OptionsDependencies } from 'src/types/OptionsHook';
 import { DEFAULT_LAZY_OPTIONS_COUNT } from 'src/constants/common';
@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { SearchRequest } from 'src/types/Request';
 import useOptionsSearch from 'src/utils/hooks/useOptionsSearch';
 import { get, isArray, isNil, isString, noop, omit } from 'lodash';
-import AppViewTextField from './AppViewTextField';
+import { AppViewTextField } from './AppViewTextField';
 
 export interface AppSearchableSelectProps<T> extends Omit<AutocompleteProps<T, boolean, false, boolean>, 'renderInput' | 'options' | 'onChange' | 'size'> {
   options?: OptionsHook<T>;
@@ -37,7 +37,7 @@ const baseDefaultFilter: SearchRequest = {
   limit: DEFAULT_LAZY_OPTIONS_COUNT,
 };
 
-const AppSearchableSelect = <T,>(props: AppSearchableSelectProps<T>) => {
+export const AppSearchableSelect = <T,>(props: AppSearchableSelectProps<T>) => {
   const {
     name, label, id, setFieldValue, optionId, defaultValue, options,
     lazyOptions, optionsDependencies, optionLabel = 'name', defaultFilter, showViewMode = false,
@@ -122,5 +122,3 @@ const AppSearchableSelect = <T,>(props: AppSearchableSelectProps<T>) => {
     />
   </>;
 };
-
-export default AppSearchableSelect;

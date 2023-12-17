@@ -39,7 +39,7 @@ const overrideAlertConfig = (config: AlertState | undefined, overrideConfigs: { 
   };
 };
 
-const AppAlert = (props: AppAlertProps) => {
+export const AppAlert = (props: AppAlertProps) => {
   const { ids, inline = false, configs = {}, mb = 3 } = props;
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
@@ -106,5 +106,3 @@ const AppAlert = (props: AppAlertProps) => {
     />);
   }
 };
-
-export default AppAlert;

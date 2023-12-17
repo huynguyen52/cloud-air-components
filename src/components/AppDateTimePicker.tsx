@@ -5,9 +5,9 @@ import { FocusEventHandler, ReactNode, useEffect, useState } from 'react';
 import { DEFAULT_DATETIME_FORMAT, DEFAULT_DATE_APM_FORMAT, SERVER_DATETIME_FORMAT } from 'src/constants/common';
 import dayjs, { Dayjs } from 'dayjs';
 import { Variant } from '@mui/material/styles/createTypography';
-import AppViewTextField from './AppViewTextField';
+import { AppViewTextField } from './AppViewTextField';
 import { omit } from 'lodash';
-import AppRequiredAsterisk from './AppRequiredAsterisk';
+import { AppRequiredAsterisk } from './AppRequiredAsterisk';
 
 export interface AppDateTimePickerProps {
   id: string;
@@ -93,7 +93,7 @@ const useStyles = (theme: Theme, size: 'small' | 'normal') => ({
   }
 });
 
-const AppDateTimePicker = (props: AppDateTimePickerProps) => {
+export const AppDateTimePicker = (props: AppDateTimePickerProps) => {
   const { size = 'normal', name, label, defaultValue, value, setFieldValue,
     disabled, showViewMode, id, error, required, showPeriodOnly, minDate, maxDate
   } = props;
@@ -151,5 +151,3 @@ const AppDateTimePicker = (props: AppDateTimePickerProps) => {
     </LocalizationProvider>
   );
 };
-
-export default AppDateTimePicker;

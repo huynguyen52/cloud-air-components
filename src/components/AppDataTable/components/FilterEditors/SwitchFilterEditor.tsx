@@ -1,5 +1,5 @@
 import { FilterEditorProps } from '.';
-import AppSwitch from 'src/components/AppSwitch';
+import { AppSwitch } from 'src/components/AppSwitch';
 
 const SwitchFilterEditor = (props: FilterEditorProps) => {
   const {

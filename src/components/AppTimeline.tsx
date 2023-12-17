@@ -3,7 +3,7 @@ import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import { findIndex } from 'lodash';
-import AppLoading from './AppLoading';
+import { AppLoading } from './AppLoading';
 
 export enum TimelineDataStatus {
   COMPLETED = 'COMPLETED',
@@ -21,7 +21,7 @@ export interface AppTimelineProps {
   loading?: boolean;
 }
 
-const AppTimeline = (props: AppTimelineProps) => {
+export const AppTimeline = (props: AppTimelineProps) => {
   const { data, loading } = props;
   return (
     <Box sx={{ width: '100%', p: 3 }}>
@@ -37,5 +37,3 @@ const AppTimeline = (props: AppTimelineProps) => {
     </Box>
   );
 };
-
-export default AppTimeline;

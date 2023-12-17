@@ -22,7 +22,7 @@ export interface AppDatePickerProps {
 }
 
 
-const AppDatePicker = (props: AppDatePickerProps) => {
+export const AppDatePicker = (props: AppDatePickerProps) => {
   const { name, label, defaultValue, value, onChange, disabled, ...rest } = props;
 
   const valueFromString = (value?: string) => value ? dayjs(value): undefined;
@@ -52,5 +52,3 @@ const AppDatePicker = (props: AppDatePickerProps) => {
     />
   </LocalizationProvider>);
 };
-
-export default AppDatePicker;

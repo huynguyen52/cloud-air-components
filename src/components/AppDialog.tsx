@@ -9,7 +9,7 @@ import { isFunction, noop } from 'lodash';
 import { ReactNode, useEffect } from 'react';
 import { AppFormikProps, prepareFormikProps, useAppFormik } from 'src/utils/formikUtils';
 import * as yup from 'yup';
-import AppCircularProgress from './AppCircularProgress';
+import { AppCircularProgress } from './AppCircularProgress';
 import { DEFAULT_DIALOG_CONTENT_MAX_HEIGHT } from 'src/constants/common';
 
 export interface AppDialogProps extends Omit<DialogProps, 'title'>  {
@@ -25,7 +25,7 @@ export interface AppDialogProps extends Omit<DialogProps, 'title'>  {
   showViewMode?: boolean;
 }
 
-const AppDialog = (props: AppDialogProps) => {
+export const AppDialog = (props: AppDialogProps) => {
   const { actions, message, form: Form, handleSubmit = noop, initialValues = {},
     validationSchema, open, isLoading
   } = props;
@@ -81,5 +81,3 @@ const AppDialog = (props: AppDialogProps) => {
     </Dialog>
   );
 };
-
-export default AppDialog;

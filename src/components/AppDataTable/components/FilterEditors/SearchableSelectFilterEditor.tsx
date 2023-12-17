@@ -1,5 +1,5 @@
 import { SelectFilterEditorProps } from '.';
-import AppSearchableSelect from 'src/components/AppSearchableSelect';
+import { AppSearchableSelect } from 'src/components/AppSearchableSelect';
 
 const SearchableSelectFilterEditor = <T,>(props: SelectFilterEditorProps<T>) => {
   const {

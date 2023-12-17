@@ -1,4 +1,4 @@
-import AppTextField from 'src/components/AppTextField';
+import { AppTextField } from 'src/components/AppTextField';
 import { InlineEditorProps } from '.';
 import { useTranslation } from 'react-i18next';
 

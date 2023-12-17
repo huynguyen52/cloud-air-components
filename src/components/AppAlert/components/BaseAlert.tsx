@@ -1,6 +1,6 @@
 import { Alert, AlertColor, AlertTitle, Collapse, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import AppCircularProgress from 'src/components/AppCircularProgress';
+import { AppCircularProgress } from 'src/components/AppCircularProgress';
 import { MouseEventHandler, ReactNode, forwardRef } from 'react';
 
 export interface BaseAlertProps {

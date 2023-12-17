@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-import AppPrivateRoute from 'src/components/AppPrivateRoute';
+import { AppPrivateRoute } from 'src/components/AppPrivateRoute';
 import { renderRoutes, routeConfigs } from './routes';
 
 const routeViews: { [key: string]: JSX.Element } = {

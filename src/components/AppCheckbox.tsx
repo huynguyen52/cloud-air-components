@@ -9,7 +9,7 @@ export interface AppCheckboxProps extends Omit<SwitchProps, 'defaultValue' | 'id
   fullWidth?: boolean;
 }
 
-const AppCheckbox = (props: AppCheckboxProps) => {
+export const AppCheckbox = (props: AppCheckboxProps) => {
   const { id, label, defaultValue, fullWidth, ...rest } = props;
   const theme = useTheme();
   const width = fullWidth ? '100%' : undefined;
@@ -24,5 +24,3 @@ const AppCheckbox = (props: AppCheckboxProps) => {
     label={label}
   />);
 };
-
-export default AppCheckbox;

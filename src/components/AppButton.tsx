@@ -1,5 +1,5 @@
 import { Button, ButtonProps, Typography, useTheme } from '@mui/material';
-import AppCircularProgress from './AppCircularProgress';
+import { AppCircularProgress } from './AppCircularProgress';
 import { Variant } from '@mui/material/styles/createTypography';
 
 export interface AppButtonProps extends Omit<ButtonProps, 'size'> {
@@ -18,7 +18,7 @@ const sizeVariants = {
   }
 };
 
-const AppButton = (props: AppButtonProps) => {
+export const AppButton = (props: AppButtonProps) => {
   const theme = useTheme();
   const { size = 'normal', loading, disabled, children, sx = {}, ...rest } = props;
   const sizeVariant = sizeVariants[size];
@@ -43,5 +43,3 @@ const AppButton = (props: AppButtonProps) => {
     </Typography>
   </Button>);
 };
-
-export default AppButton;

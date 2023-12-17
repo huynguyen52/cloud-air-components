@@ -7,8 +7,8 @@ import { SearchRequest } from 'src/types/Request';
 import useOptionsSearch from 'src/utils/hooks/useOptionsSearch';
 import { get, omit } from 'lodash';
 import { Variant } from '@mui/material/styles/createTypography';
-import AppViewTextField from './AppViewTextField';
-import AppRequiredAsterisk from './AppRequiredAsterisk';
+import { AppViewTextField } from './AppViewTextField';
+import { AppRequiredAsterisk } from './AppRequiredAsterisk';
 
 export interface AppSelectProps<T> extends Omit<SelectProps, 'size' | 'value' | 'onChange' | 'defaultValue'> {
   defaultValue: T;
@@ -111,7 +111,7 @@ const useStyles = (theme: Theme, size: 'small' | 'normal') => ({
   }
 });
 
-const AppSelect = <T,>(props: AppSelectProps<T>) => {
+export const AppSelect = <T,>(props: AppSelectProps<T>) => {
   const {
     options, label, size = 'normal', error, id, allowNotChosen, setFieldValue, optionId, optionLabel = 'name', renderOptionLabel,
     helperText, optionsDependencies, lazyOptions, defaultFilter, name, required = false, showViewMode, defaultValue, value,
@@ -177,5 +177,3 @@ const AppSelect = <T,>(props: AppSelectProps<T>) => {
     {helperText && <FormHelperText>{helperText}</FormHelperText>}
   </FormControl>;
 };
-
-export default AppSelect;

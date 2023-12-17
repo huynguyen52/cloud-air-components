@@ -1,4 +1,4 @@
-import AppSelect from 'src/components/AppSelect';
+import { AppSelect } from 'src/components/AppSelect';
 import { SelectFilterEditorProps } from '.';
 
 const SelectFilterEditor = <T,>(props: SelectFilterEditorProps<T>) => {

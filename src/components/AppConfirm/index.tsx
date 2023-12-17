@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import AppButton from '../AppButton';
-import AppDialog from '../AppDialog';
+import { AppButton } from '../AppButton';
+import { AppDialog } from '../AppDialog';
 import { FormikValues } from 'formik';
 import * as yup from 'yup';
 import useConfirm from './useConfirm';
@@ -19,7 +19,7 @@ export interface AppConfirmConfig {
   cancelLabel?: string;
 }
 
-const AppConfirm = () => {
+export const AppConfirm = () => {
   const { onConfirm, onCancel, confirmState } = useConfirm();
   const { t } = useTranslation();
   const confirmElement = document.getElementById('confirm');
@@ -45,7 +45,5 @@ const AppConfirm = () => {
     return createPortal(confirmPopup, confirmElement);
   }
 };
-
-export default AppConfirm;
 
 export { useConfirm };

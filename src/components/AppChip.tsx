@@ -28,7 +28,7 @@ const sizeVariants = {
   }
 };
 
-const AppChip = forwardRef(({ size = 'normal', color, bgcolor, sx={}, ...props }: AppChipProps, ref: ForwardedRef<HTMLDivElement | null>) => {
+export const AppChip = forwardRef(({ size = 'normal', color, bgcolor, sx={}, ...props }: AppChipProps, ref: ForwardedRef<HTMLDivElement | null>) => {
   const theme = useTheme();
   const sizeVariant = sizeVariants[size];
   return (<Chip
@@ -51,5 +51,3 @@ const AppChip = forwardRef(({ size = 'normal', color, bgcolor, sx={}, ...props }
 });
 
 AppChip.displayName = 'AppChip';
-
-export default AppChip;
