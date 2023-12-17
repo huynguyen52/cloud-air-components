@@ -22,7 +22,7 @@
     "/dist"
   ],
   "publishConfig": {
-    "access": "public"
+    "registry": "http://192.168.1.125:8881/repository/npm-hosted/"
   },
   "scripts": {
     "start": "vite",

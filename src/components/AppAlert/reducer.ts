@@ -24,7 +24,7 @@ export type AlertConfig = {
 }
 
 // Define a type for the slice state
-interface AlertPoolState {
+export interface AlertPoolState {
   pool: {[key: AlertId]: AlertState}; // Map of alert ids to alert configurations
 }
 

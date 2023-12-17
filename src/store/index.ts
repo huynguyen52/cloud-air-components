@@ -1,9 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit';
-import globalReducer from './reducer';
-import tableReducer from 'src/components/AppDataTable/reducer';
-import confirmReducer from 'src/components/AppConfirm/reducer';
-import alertReducer from 'src/components/AppAlert/reducer';
-import notificationCenterReducer from 'src/layouts/components/NotificationCenter/reducer';
+import { Reducer, configureStore } from '@reduxjs/toolkit';
+import globalReducer, { GlobalState } from './reducer';
+import tableReducer, { TableState } from 'src/components/AppDataTable/reducer';
+import confirmReducer, { ConfirmState } from 'src/components/AppConfirm/reducer';
+import alertReducer, { AlertPoolState } from 'src/components/AppAlert/reducer';
+import notificationCenterReducer, { NotificationCenterState } from 'src/layouts/components/NotificationCenter/reducer';
 import { authApi } from 'src/api/authApi';
 import { userApi } from 'src/api/userApi';
 import { permissionApi } from 'src/api/permissionApi';
@@ -28,11 +28,11 @@ enableMapSet();
 
 export const store = configureStore({
   reducer: {
-    global: globalReducer,
-    table: tableReducer,
-    confirm: confirmReducer,
-    alert: alertReducer,
-    notificationCenter: notificationCenterReducer,
+    global: globalReducer as Reducer<GlobalState>,
+    table: tableReducer as Reducer<TableState>,
+    confirm: confirmReducer as Reducer<ConfirmState>,
+    alert: alertReducer as Reducer<AlertPoolState>,
+    notificationCenter: notificationCenterReducer as Reducer<NotificationCenterState>,
     // Insert more reducer before this comment
 
     [authApi.reducerPath]: authApi.reducer,

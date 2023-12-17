@@ -6,7 +6,7 @@ import { ReactNode } from 'react';
 import { AppFormikProps } from 'src/utils/formikUtils';
 
 // Define a type for the slice state
-interface ConfirmState {
+export interface ConfirmState {
   title: string;
   message?: ReactNode;
   initialValues?: FormikValues;

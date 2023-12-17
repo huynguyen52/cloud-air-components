@@ -3,7 +3,7 @@ import { NEW_ROW_ID } from '.';
 import { SearchRequest } from 'src/types/Request';
 
 // Define a type for the slice state
-interface TableState {
+export interface TableState {
   filters: {[key: string]: SearchRequest};
   addingRow: {[key: string]: unknown};
   editingChanges: {[key: string]: {[key: number | string]: unknown}};

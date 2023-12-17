@@ -4,7 +4,7 @@ import { SearchRequest } from 'src/types/Request';
 import Notification from 'src/types/Notification';
 
 // Define a type for the slice state
-interface NotificationCenterState {
+export interface NotificationCenterState {
   open: boolean;
   filter: SearchRequest<{unreadOnly: boolean}>;
   data: Notification[];

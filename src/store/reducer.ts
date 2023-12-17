@@ -3,7 +3,7 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 import { UserDetails } from 'src/types/User';
 
 // Define a type for the slice state
-interface GlobalState {
+export interface GlobalState {
   user?: UserDetails;
   sideBarOpen: boolean;
   sideBarHover: boolean;
