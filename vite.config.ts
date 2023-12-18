@@ -36,8 +36,6 @@ export default defineConfig({
         'i18next',
         'i18next-http-backend',
         '@mui/material',
-        '@reduxjs/toolkit',
-        'react-redux',
         'react-router-dom',
       ],
       output: {
