@@ -35,6 +35,7 @@ export default defineConfig({
         'react-i18next',
         'i18next',
         'i18next-http-backend',
+        '@mui/material',
       ],
       output: {
         globals: {
